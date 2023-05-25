@@ -8,28 +8,37 @@ console.log(`El nombre ingresado es: ${nombre}.`); */
 // Operadores logicos
 
 /* 1 === 1.0
-true
 "1" == 1.0
-true
 "123455" = prom
-VM685:1 Uncaught SyntaxError: Invalid left-hand side in assignment
 "123455" === prompt('pon tu contraseña')
-true
-"123455" === prompt('pon tu contraseña')
-false
 if ("123455" === prompt('pon tu contraseña')) {
     alert("Bienvenido, ya estamos adentro.")
 }
-undefined
 if ("123455" === prompt('pon tu contraseña')) {
     alert("Bienvenido, ya estamos adentro.")
 }
-undefined
 if ("123455" === prompt('pon tu contraseña')) {
     alert("Bienvenido, ya estamos adentro.");
 } else {
     console.error("ALARMA: MENOR DE EDAD quiere robar mi cuenta");
 } */
+
+// usar && se agrega otra condicion (Y) se tienen que cumplir los dos
+if ("123455" === prompt(`pon tu contraseña`) && 18 <= parseInt(prompt("dame tu edad")))  {
+    alert ("Bienvenido, pudiste ingresar.")
+} else {
+    console.error ("ALARMA: MENOR DE EDAD quiere robar mi cuenta")
+}
+
+//  usar || se agrega otra condicion (O) debes cumplir con alguna de las condiciones
+
+if (20 <= prompt(`cuanto traes`) || 18 <= parseInt(prompt(`dame tu edad`))) {
+    alert("Bienvenido, ya estamos adentro");
+} else {
+    console.error("ALARMA: ERROR ALGUIEN QUIERE ENTRAR")
+    document.write(`<h1>ALARMA: MENOR DE EDAD QUIERE COLARSE</h1>`)
+}
+
 
 
 
