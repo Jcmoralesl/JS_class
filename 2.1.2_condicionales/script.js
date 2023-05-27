@@ -57,7 +57,7 @@ let respuesta = prompt ("¿Eres bellismo/a?");
 if (respuesta === "si") {
     console.log ("Ciertamente.");
 } else if (respuesta === "no") {
-    console.log ("No te creo."),
+    console.log ("No te creo.");
 } else {
     console.log ("No entiendo lo que me dices.");
 }
@@ -82,3 +82,20 @@ if (n2%2 === 0) {
 
 // Cuarto ejercicio: Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir "Ganaste un premio", en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.
 
+let n3 = prompt (`Escribe un numero`)
+if (n3 == 1000) {
+    alert ("Ganaste un premio")
+} else {
+    alert (" "+n3+" : Lo sentimos, sigue participando ")
+}
+
+// Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.
+
+let n4 = prompt (`Escribe un numero`) 
+let n5 = prompt (`Escribe otro numero`)
+
+if (n4 < n5) {
+    document.write ("El numero "+n4+" es el menor")
+} if (n5 < n4) {
+    document.write ("El numero "+n5+" es el menor")
+}
