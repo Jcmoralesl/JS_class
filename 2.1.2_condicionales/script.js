@@ -89,7 +89,7 @@ if (n3 == 1000) {
     alert (" "+n3+" : Lo sentimos, sigue participando ");
 }
  */
-// Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.
+// Quinto ejercicio: Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.
 
 /* let n4 = prompt (`Escribe un numero`);
 let n5 = prompt (`Escribe otro numero`);
@@ -100,7 +100,7 @@ if (n4 < n5) {
     document.write ("El numero "+n5+" es el menor");
 }
  */
-// Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.
+// Sexto ejercicio: Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.
 
 /* let n6 = prompt (`Escribe un numero`);
 let n7 = prompt (`Escribe otro numero`);
@@ -116,7 +116,7 @@ let n8 = prompt (`EScribe un ultimo numero`);
     document.write ("El numero "+n8+" es el mayor ")
 } */
 
-// Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
+// Septimo ejercicio: Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
 
 /* let dia = prompt ("Ingrese un día de la semana")
 if (dia == "lunes") {
@@ -129,7 +129,7 @@ if (dia == "lunes") {
     console.log ("Sigues en la semana, espera el fin de semana");
 } */
 
-// Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.
+// Octavo ejercicio: Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.
 
 /* let nota = prompt ("Ingrese una calificación entre 1 y 10")
 
@@ -145,5 +145,68 @@ if ( nota < 1 || nota > 10) {
     console.log ("Excelente");
 }  */
 
-//Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuánto le costará en función del topping que elija. ● El helado sin topping cuesta 50 MXN. ● El topping de oreo cuesta 10 MXN. ● El topping de KitKat cuesta 15 MXN. ● El topping de brownie cuesta 20 MXN. En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el precio del helado sin ningún topping.
+// Noveno ejercicio: Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuánto le costará en función del topping que elija. ● El helado sin topping cuesta 50 MXN. ● El topping de oreo cuesta 10 MXN. ● El topping de KitKat cuesta 15 MXN. ● El topping de brownie cuesta 20 MXN. En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el precio del helado sin ningún topping.
+
+/* let topping = prompt ("Escoge tu topping para tu helado");
+
+if (topping === "helado")  {
+    console.log ("Helado sin topping: 50 MXN");
+} else if (topping === "oreo") {
+    console.log ("El topping de Oreo cuesta 10 MXN");
+    console.log ("Valor helado: 60 MXN")
+} else if (topping === "kitkat") {
+    console.log ("El topping de KitKat cuesta 15 MXN");
+    console.log ("Valor helado: 65 MXN")
+} else if (topping === "brownie") {
+    console.log ("El topping de Brownie cuesta 20 MXN");
+    console.log ("Valor helado: 70 MXN")
+} else {
+    console.log ("No tenemos este topping, lo sentimos")
+    console.log ("Helado sin topping: 50 MXN");
+}
+ */
+
+// Decimo ejercicio: Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
+
+let pro = prompt ("Bienvenido a nuestro portal, escribe el programa que presentas interes (Course, Carrera, Master)");
+
+if (pro === "course") {
+    console.log ("Valor mensual: 4999 MXN");
+} else if (pro === "carrera") {
+    console.log ("Valor mensual: 3999");
+} else if (pro === "master") {
+    console.log ("Valor mensual: 2999");
+} else {
+    console.log ("No contamos con ese programa")
+}
+
+let beca = prompt ("Cuentas con alguna beca (facebook, google, Jesua)")
+
+if (beca === "facebook") {
+    console.log ("20% de descuento: Course: 4000 MXN, Carrera: 3200 MXN, Master: 2400 MXN")
+} else if (beca === "google") {
+    console.log ("15% de descuento: Course: 4250 MXN, Carrera: 3400 MXN, Master: 2550 MXN")
+} else if (beca === "Jesua") {
+    console.log ("50% de descuento: Course: 2499 MXN, Carrera: 1999 MXN, Master: 1499 MXN")
+} else {
+    console.log ("No es valido ese descuento")
+}
+
+let pro1 = prompt ("Conoce el precio final de tu programa escogido");
+
+if (pro1 === "course") {
+    console.log (`4999 * 20% (facebook) * 2 meses = 8000 MXN.
+    4999 * 15% (google) * 2 meses = 8500 MXN 
+    4999 * 50% (Jesua) * 2 meses = 4998 MXN`);
+} else if (pro1 === "carrera") {
+    console.log (`3999 * 20% (facebook) * 6 meses = 19200 MXN.
+    3999 * 15% (google) * 6 meses = 20400 MXN 
+    3999 * 50% (Jesua) * 6 meses =  11994`);
+} else if (pro1 === "master") {
+    console.log (`2999 * 20% (facebook) * 12 meses = 28800 MXN.
+    2999 * 15% (google) * 12 meses = 30600 MXN 
+    2999 * 50% (Jesua) * 12 meses =  17988`);
+}
+
+
 
