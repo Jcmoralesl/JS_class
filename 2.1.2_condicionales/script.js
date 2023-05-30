@@ -168,7 +168,7 @@ if (topping === "helado")  {
 
 // Decimo ejercicio: Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
 
-let pro = prompt ("Bienvenido a nuestro portal, escribe el programa que presentas interes (Course, Carrera, Master)");
+/* let pro = prompt ("Bienvenido a nuestro portal, escribe el programa que presentas interes (Course, Carrera, Master)");
 
 if (pro === "course") {
     console.log ("Valor mensual: 4999 MXN");
@@ -206,7 +206,9 @@ if (pro1 === "course") {
     console.log (`2999 * 20% (facebook) * 12 meses = 28800 MXN.
     2999 * 15% (google) * 12 meses = 30600 MXN 
     2999 * 50% (Jesua) * 12 meses =  17988`);
-}
+} */
+
+// Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
 
 
 
