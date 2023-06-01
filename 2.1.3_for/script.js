@@ -36,7 +36,7 @@ console.log("Fin del bucle")
 
 // complejos: objeto
 
-const casa = {
+/* const casa = {
     puertas: 5,
     habitaciones: 4,
     apagadores: 16,
@@ -80,4 +80,4 @@ for (let i = 0; i <= 2; i++) {
     console.log("tienes que comprar " + frutas [i])
 }
 
-console.log ("Fin del bucle")
+console.log ("Fin del bucle") */
