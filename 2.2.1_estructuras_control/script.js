@@ -51,3 +51,45 @@ console.log(alumnosMali)
 
 var alumnosTotal = alumnosMali.concat(alumnosSeb)
 console.log(alumnosTotal)
+
+// ESTRUCTURAS DE CONTROL: REPETICIÓN
+
+//while: Mientras se cumpla la condición realizar estas acciones 
+
+
+// Ejercicio 1
+var index = 0
+while (index < 11) {
+    console.log(`te toque la puerta ${index} veces`);
+    index ++; //index = index +1 
+}
+
+// Ejercicio 2
+/* const arreglo = []
+
+let userInput 
+while (!(userInput == "")) {
+    userInput = prompt ("Ingresa cualquier caracter")
+    arreglo.push (userInput)
+    console.log (userInput)
+}
+ */
+// do while: Siempre se va a ejecutar el codigo una vez y luego pregunta si continuara 
+
+/* const arreglo2 = []
+let userInputDo
+do {
+    userInputDo = prompt ("Ingresa cualquier caracter")
+    arreglo2.push (userInputDo)
+    console.log (userInputDo)
+} while (!(userInputDo == "")) */
+
+
+// For: Un buble for es un bucle que repite el bloque de instrucciones un numero 
+
+const alumnosJuan = ["Juan", "Camilo", "Andres","Felipe", "Julian", "Andrea", "Marlene", "Agusto","Carolina"]
+
+for (let index = 0; index < alumnosJuan.length; index++) {
+    console.log(index, alumnosJuan[index])
+    
+}
