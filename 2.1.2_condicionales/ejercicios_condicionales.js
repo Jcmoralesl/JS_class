@@ -181,8 +181,22 @@ let autobus = 0.5
 let valorCoche = ((distancia * coche) + 5)
 let valorCoche1 = ((distancia * coche) + 10)
 
-if (distancia <= 100) {
+let valorMoto = ((distancia * moto) + 5)
+let valorMoto1 = ((distancia * moto) + 10)
+
+let valorAuto = ((distancia * autobus) + 5)
+let valorAuto1 = ((distancia * autobus) + 10)
+
+if (distancia <= 100 && tipo == "coche") {
     console.log (`Debes pagar ${valorCoche} dolares`)
-} else if (distancia > 100) {
+} else if (distancia > 100 && tipo == "coche") {
     console.log (`Debes pagar ${valorCoche1} dolares`)
+} else if (distancia <= 100 && tipo == "moto") {
+    console.log (`Debes pagar ${valorMoto} dolares`)
+} else if (distancia > 100 && tipo == "moto") {
+    console.log (`Debes pagar ${valorMoto1} dolares`)
+} else if (distancia <= 100 && tipo == "autobus") {
+    console.log (`Debes pagar ${valorAuto} dolares`)
+} else if (distancia > 100 && tipo == "autobus") {
+    console.log (`Debes pagar ${valorAuto1} dolares`)
 }
