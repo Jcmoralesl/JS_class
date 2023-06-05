@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //  EJERCICIOS JS: CONDICIONALES
+=======
+//  EJERCICIOS JS 
+>>>>>>> 3979648abb25ed667734f183f34b8d16386e1b50
 
 // Primer ejercicio: Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no, responder: “No te creo”.
 
@@ -165,4 +169,42 @@ if (pro1 === "course") {
     2999 * 50% (Jesua) * 12 meses =  17988`);
 } */
 
+<<<<<<< HEAD
 // Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
+=======
+/* Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
+Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5.
+Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere qué:
+total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. */
+
+let distancia = prompt ("Ingresa la distancia recorrida en kilometros")
+
+let tipo = prompt ("Ingresa el tipo de vehiculo utilizado: coche, moto o autobus")
+
+let coche = 0.20
+let moto = 0.10
+let autobus = 0.5
+
+let valorCoche = ((distancia * coche) + 5)
+let valorCoche1 = ((distancia * coche) + 10)
+
+let valorMoto = ((distancia * moto) + 5)
+let valorMoto1 = ((distancia * moto) + 10)
+
+let valorAuto = ((distancia * autobus) + 5)
+let valorAuto1 = ((distancia * autobus) + 10)
+
+if (distancia <= 100 && tipo == "coche") {
+    console.log (`Debes pagar ${valorCoche} dolares`)
+} else if (distancia > 100 && tipo == "coche") {
+    console.log (`Debes pagar ${valorCoche1} dolares`)
+} else if (distancia <= 100 && tipo == "moto") {
+    console.log (`Debes pagar ${valorMoto} dolares`)
+} else if (distancia > 100 && tipo == "moto") {
+    console.log (`Debes pagar ${valorMoto1} dolares`)
+} else if (distancia <= 100 && tipo == "autobus") {
+    console.log (`Debes pagar ${valorAuto} dolares`)
+} else if (distancia > 100 && tipo == "autobus") {
+    console.log (`Debes pagar ${valorAuto1} dolares`)
+}
+>>>>>>> 3979648abb25ed667734f183f34b8d16386e1b50
