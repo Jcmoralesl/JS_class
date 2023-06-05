@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 //  EJERCICIOS JS: CONDICIONALES
-=======
 //  EJERCICIOS JS 
->>>>>>> 3979648abb25ed667734f183f34b8d16386e1b50
-
 // Primer ejercicio: Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no, responder: “No te creo”.
 
 /* if ("si" === prompt(`¿eres bellisimo/a?`)) {
@@ -169,9 +165,8 @@ if (pro1 === "course") {
     2999 * 50% (Jesua) * 12 meses =  17988`);
 } */
 
-<<<<<<< HEAD
 // Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
-=======
+
 /* Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
 Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5.
 Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere qué:
@@ -207,4 +202,4 @@ if (distancia <= 100 && tipo == "coche") {
 } else if (distancia > 100 && tipo == "autobus") {
     console.log (`Debes pagar ${valorAuto1} dolares`)
 }
->>>>>>> 3979648abb25ed667734f183f34b8d16386e1b50
+

@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+// HEAD
 // EJERCICIOS: FOR 
-=======
+
 /* console.log ("¡Hello guys!") */ //Confirmación script/html
 
 // EJERCIOS FOR 
@@ -44,4 +44,4 @@ return soloenteros;
 }  
 
 console.log(soloNumeros(y));
->>>>>>> 3979648abb25ed667734f183f34b8d16386e1b50
+
