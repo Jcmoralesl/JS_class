@@ -10,5 +10,5 @@ const stdin = process.openStdin();
 
 stdin.addListener("data", (data) => {
     console.log("Tu nombre es: " + data.toString());
-    //process.exit();
+    process.exit();
 })
