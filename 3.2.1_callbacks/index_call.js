@@ -16,3 +16,18 @@ sumarAs (4,3, function(resultado){
 }) 
 
 console.log ("Despues de la suma")
+
+// EJERCICIO
+
+const funcionMagica = (a, b, callback) => {
+    callback (a,b);
+};
+
+const suma = (a,b) => console.log (a + b);
+const resta = (a,b) => console.log (a - b);
+const multiplicar = (a,b) => console.log (a * b);
+const dividir = (a,b) => console.log (a / b);
+
+
+funcionMagica (3,7, multiplicar);
+
