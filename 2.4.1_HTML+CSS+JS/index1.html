@@ -8,18 +8,17 @@
 </head>
 <body>
     <header>
-        <h1 class="header1">Sale</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Perfume_Single_Logo.png" alt="perfume_image">
+        <h1 class="header1">Sale (Perfumes)</h1>
     </header>
     <main>
-        <div>
+        <div class="vendedor">
             <label for="nombreVen">Nombre del vendedor</label>
             <select class="n_vendedor" id="nombreVendedor">
                 <option>Juana</option>
                 <option>Pedro</option>
             </select>
         </div>
-        <div>
+        <div class="tipo_pefume">
             <label for="nombreProducto">Tipo de perfume</label>
             <select class="t_producto" id="nombreProducto">
                 <option>Aqua</option>
@@ -28,7 +27,12 @@
                 <option>Frescura</option>
             </select>
         </div>
-
+        <div>
+            <button id="añadirPerfume">Añadir</button>
+        </div>
+        <div>
+            <button id="resultadoVendedores">Resultados</button>
+        </div>
 
     </main>
     <script src="ejercicios_dom.js"></script>

@@ -1,7 +1,42 @@
 .header1 {
-    display: inline-block;
+    text-align: center;
 }
-img  {
-    width: 200px;
-    height: 100px;;
+div {
+    text-align: center;
+}
+
+select {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.vendedor {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo_pefume {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);  
 }
