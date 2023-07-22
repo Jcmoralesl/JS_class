@@ -79,10 +79,18 @@ DOMcantidad.addEventListener (`change`,function (){
 DOMañadir.addEventListener(`click`, function(){ 
     console.log(DOMvendedor.value)
     console.log(DOMperfume.value)
-    console.log(DOMcantidad.value)
-    console.log(carritoJuana)
-    console.log(carritoPedro)
-
+    console.log(DOMcantidad.value) 
+    
+    if (DOMvendedor.value == `Juana`) {
+        console.log("El vendedor es Juana");
+        carritoJuana.push (DOMperfume.value)
+        console.log(carritoJuana)
+    } else if (DOMvendedor.value == `Pedro`) {
+        console.log("El vendedor es Pedro");
+        carritoPedro.push (DOMperfume.value)
+        console.log(carritoPedro)
+    }
 
 });
+
 
