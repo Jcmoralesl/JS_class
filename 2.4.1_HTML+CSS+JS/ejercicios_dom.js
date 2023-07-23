@@ -61,6 +61,7 @@ const DOMresultado = document.querySelector(`#resultadoVendedores`);
 
 // }
 
+// Para cambiar los selectores por los valores dentro de ellos
 const DOMvendedor = document.getElementById(`nombreVendedor`)
 DOMvendedor.addEventListener(`change` , function () {
     var selectedOption = this.options [DOMvendedor.selectedIndex];
@@ -77,20 +78,35 @@ DOMcantidad.addEventListener (`change`,function (){
 })
 
 DOMañadir.addEventListener(`click`, function(){ 
+    //para ver los valores seleccionados en la consola
     console.log(DOMvendedor.value)
     console.log(DOMperfume.value)
     console.log(DOMcantidad.value) 
+    //Para obtener el valor del perfume seleccionado
+    const domPer = document.getElementById("nombreProducto").value;
     
+    precioProducto = baseDeDatos.forEach (objeto => {
+        if (objeto.nombre == domPer) {
+        console.log (objeto.precio)
+        let precioProducto2 = objeto.precio
+        } else {
+            return 0;
+        } 
+    })
+    
+    //para realizar el push en el array de cada vendedor
+    const venta = {perfume: DOMperfume.value, cantidad: DOMcantidad.value, total: DOMcantidad.value }
     if (DOMvendedor.value == `Juana`) {
         console.log("El vendedor es Juana");
-        carritoJuana.push (DOMperfume.value)
+        carritoJuana.push (venta)
         console.log(carritoJuana)
     } else if (DOMvendedor.value == `Pedro`) {
         console.log("El vendedor es Pedro");
-        carritoPedro.push (DOMperfume.value)
+        carritoPedro.push (venta)
         console.log(carritoPedro)
     }
-
 });
+
+
 
 
