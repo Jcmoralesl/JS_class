@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco Tu Mejor Aliado</title>
+    <link rel="app.css" href="">
 </head>
 <body>
-    <h1>BIENVENIDO A TU BANCO AMIGO</h1>
+    <div>
+    <span class="logo-banco">🏦</span>
+    <header>
+        <h1 id="saludar_usuario">Bienvenido a tu banco  </h1>
+        <h5>Por favor selecciona una opción</h5>
+    </header>
+    <main class="parrilla_funciones">
+        <div class="funciones-ms">
+            <button id="retiros" class="btn-ms border-top">
+                <span>💵</span>
+                <p>Retiros</p>
+            </button>
+            <button id="deposito" class="btn-ms border-top">
+                <span>🏧</span>
+                <p>Depositos</p>
+            </button>
+        </div>
+        <div class="funciones-sec">
+            <button id="saldo" class="btn-sec">
+                <span>🫰🏽</span>
+                <p>Saldo</p>
+            </button>
+            <button id="salir" class="btn-sec">
+                <span>🚪</span>
+                <p>Salir</p>
+            </button>
+        </div>
+    </main>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

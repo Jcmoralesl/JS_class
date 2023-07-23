@@ -27,8 +27,27 @@ const clienteBanco = [
 ];
 
 //Llamamos las variables de los input y el boton 
-const error = document.querySelector(`error-login`);
 const input = document.querySelector(`input`);
-const login = document.querySelector(`#login`);
+const form = document.querySelector(`#login`);
 
-console.log (input)
+
+form.addEventListener ('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(form)
+    
+    const { email: loginEmail, password: loginPassword } = Object.fromEntries(data)
+    console.log ({loginEmail, loginPassword})
+    
+    clienteBanco.forEach (objeto => {
+        if (objeto.email === loginEmail && objeto.password === loginPassword) {
+            const { email, password, ...restOfElements } = clienteBanco;
+            window.localStorage.setItem('user', JSON.stringify({ ...restOfElements, email }))
+            window.location.href = 'http://127.0.0.1:5500/2.4.2_Cajero_automatico/cajero.html'; 
+        } else if (objeto.email != loginEmail || objeto.password != loginPassword) {
+            alert("¡ERROR, los datos suministrados no son correctos!. Por favor vuelve a intentarlo")
+            form.reset ();
+        }
+    })
+
+})
+
