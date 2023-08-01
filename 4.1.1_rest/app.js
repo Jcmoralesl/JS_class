@@ -2,13 +2,17 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+const Routes = require('./routes');
 
-// app.get para obtener la informacion
 app.get('/', (req, res) => {
-    res.send('Hola hermoso mundo!')
+    res.send('Hello World!');
 });
 
-//crea un puerto en mi computadora 
+app.use(express.json());
+app.use('/users', Routes.UserRoutes);
+app.use('/api', Routes.ApiRoutes);
+
+
 app.listen(port, () => {
-    console.log(`Aplicacion de ejemplo en el puerto: ${port}`)
+    console.log(`Aplicación de ejemplo en el puerto: ${port}`);
 });
