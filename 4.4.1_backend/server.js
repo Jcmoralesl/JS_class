@@ -5,6 +5,7 @@ const port = 3000;
 
 const Routes = require ('./routes');
 
+server.use(express.json());
 server.use('/api/v1/clients' , Routes.clientRoutes);
 server.use('/api/v1/products' , Routes.productRoutes);
 server.use('/api/v1/sales' , Routes.saleRoutes);
