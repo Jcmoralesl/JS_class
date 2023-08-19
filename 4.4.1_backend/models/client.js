@@ -7,7 +7,8 @@ const getAllClients = () => {
 
 const getClient = (idClient) => {
     return database('clients')
-        .where( { id: idClient });
+        .where( { id: idClient })
+        .first();
 };
 
 const insertClient = (client) => {
