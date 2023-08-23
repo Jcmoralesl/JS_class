@@ -9,7 +9,8 @@
     "dev": "nodemon server.js",
     "knex_migrate_clients": "knex migrate:make client",
     "knex_latest": "knex migrate:latest",
-    "knex_migrate_products": "knex migrate:make product"
+    "knex_migrate_products": "knex migrate:make product",
+    "knex_migrate_sales": "knex migrate:make sale"
   },
   "keywords": [],
   "author": "",
