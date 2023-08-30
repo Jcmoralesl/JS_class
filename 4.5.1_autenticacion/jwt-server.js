@@ -6,6 +6,20 @@ const PORT = 3000;
 
 const server = express()
 
+const validateJWT = (req, res, next) => {
+    const accessToken = req.get.headers(`authorization`)
+
+    jwt.verify(accessToken, SECRET_KEY, () => {
+        (error, decode) => {
+            if(error) {
+                res.status(401).send('acceso denegado')
+            } else {
+                next ()
+            }
+        }
+    })
+}
+
 server.use(express.json())
 
 server.use ('/auth', (req, res) => {
@@ -15,8 +29,23 @@ server.use ('/auth', (req, res) => {
     res.send(token)
 })
 
-server.use('/songs', (req,res)=> {
+server.use('/songs', validateJWT, (req,res)=> {
+    const songs = [
+        {
+            title: `Infinity repeating`,
+            artisti: `Daft Punk`
+        },
+        {
+            title: `Bohemian Rhapsody`,
+            artisti: `Queen`
+        },
+        {
+            title: `Bones`,
+            artisti: `Imagine Dragons`
+        }
+    ]
 
+    res.status(201).send
 })
 
 server.listen (PORT, () => {
