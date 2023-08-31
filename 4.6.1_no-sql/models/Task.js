@@ -6,6 +6,12 @@ const taskSchema = {
     description: String,
     deadline: {
         type : Date ,
-    }
+        required: true,
+        default: new Date ()
+    },
+    done: {
+        type: Boolean,
+        default: false
+    } 
     
 }
