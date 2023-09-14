@@ -17,11 +17,11 @@ const getEmpresa = (req, res) => {
 };
 
 const insertEmpresa= (req, res) =>  {
-    const { id , name } =req.body
+    const { id , nombre } =req.body
 
-    if (id !== '' && name!= '') {
+    if (id !== '' && nombre!= '') {
         empresaModel
-            .insertEmpresa({ id, name })
+            .insertEmpresa({ id, nombre })
             .then(results => res.status(201).json({message: 'Empresa agregada exitosamente.'}))
             .catch(error => res.status(500).json(error));
     } else {

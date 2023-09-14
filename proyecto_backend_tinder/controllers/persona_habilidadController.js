@@ -10,8 +10,6 @@ const getPersonaHabilidad = (req, res) => {
 };
 
 
-
-
 module.exports = {
     getPersonaHabilidad
 };

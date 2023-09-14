@@ -7,11 +7,11 @@ const { habilidadesController } = require('./../controllers');
 router.get('/', habilidadesController.getHabilidades);
 
 // insertamos una habilidad
-router.post('/', clientController.insertHabilidad)
+router.post('/', habilidadesController.insertHabilidad)
 
 
 // obtener una sola habilidad
-router.get('/:id', clientController.getHabilidad)
+router.get('/:id', habilidadesController.getHabilidad)
 
 
 
